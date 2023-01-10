@@ -4,9 +4,8 @@ import { logout } from "./../../store/auth/authActions";
 import { connect } from "react-redux";
 import {useEffect, ReactElement} from "react";
 import {NextRouter, useRouter} from "next/router";
-import { OriginalMetaTags } from "@/components/SEO/MetaTags";
 
-function Dashboard(props: any): ReactElement {
+function Blog(props: any): ReactElement {
     const router: NextRouter = useRouter();
 
     useEffect(() => {
@@ -18,15 +17,7 @@ function Dashboard(props: any): ReactElement {
     // Return statement.
     return (
         <>
-            <OriginalMetaTags />
-            <div>Dashboard</div>
-            <PrimaryButton
-                onClick={() => {
-                    props.logout();
-                }}
-            >
-                Logout
-            </PrimaryButton>
+            <div>Blog</div>
         </>
     )
 }
@@ -36,4 +27,4 @@ const mapStateToProps = (state: any) => ({
     loading: state.auth.registerLoading,
 });
 
-export default connect(mapStateToProps, { logout })(Dashboard);
+export default connect(mapStateToProps, { logout })(Blog);

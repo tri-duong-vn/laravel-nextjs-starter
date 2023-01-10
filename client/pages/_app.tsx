@@ -50,7 +50,7 @@ function MyApp(props: any) {
         <Provider store={store}>
             <ChakraProvider>
                 <Navbar />
-                <props.Component {...props.pageProps} />;
+                <props.Component {...props.pageProps} />
                 {isNoProtectedRoute && <AdvancedFooter />}
             </ChakraProvider>
         </Provider>

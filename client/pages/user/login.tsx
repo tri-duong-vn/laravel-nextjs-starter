@@ -139,9 +139,6 @@ const Login = (props: any): ReactElement => {
                             <Link href="/user/register">
                                 No Account yet?
                             </Link>
-                            <Link href="/user/password/forgot">
-                                Forgot password?
-                            </Link>
                         </div>
                     </>
                 </Card>

@@ -47,8 +47,8 @@ export function Navbar(): ReactElement {
                 </div>
                 <NavbarMenuLink title="Home" link="/" onClick={toggleNavbar} />
                 <NavbarMenuLink
-                    title="Documentation"
-                    link="/docs"
+                    title="Dashboard"
+                    link="/dashboard"
                     onClick={toggleNavbar}
                 />
                 <NavbarMenuLink
@@ -107,11 +107,6 @@ export function MegaMenu(): ReactElement {
                 </div>
                 <NavbarMenuLink title="Home" link="/" onClick={toggleNavbar} />
                 <NavbarMenuLink
-                    title="Documentation"
-                    link="/docs"
-                    onClick={toggleNavbar}
-                />
-                <NavbarMenuLink
                     title="Blog"
                     link="/blog"
                     onClick={toggleNavbar}
@@ -153,7 +148,7 @@ export function MenuBar({ onClick }): ReactElement {
     return (
         <nav className="w-screen py-3 px-2 flex sticky top-0 items-center justify-between bg-purple-50 z-40">
             <Link href="/">
-                Blog
+                Home
             </Link>
             <div className="h-full cursor-pointer" onClick={onClick}>
                 <svg
@@ -172,7 +167,7 @@ export function MenuBar({ onClick }): ReactElement {
                 </svg>
             </div>
         </nav>
-    );
+    )
 }
 MenuBar.propTypes = {
     onClick: PropTypes.func.isRequired

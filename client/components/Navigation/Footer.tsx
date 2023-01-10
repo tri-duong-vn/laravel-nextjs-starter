@@ -13,29 +13,9 @@ export function AdvancedFooter(): ReactElement {
             headline: "Links",
             content: [
                 {title: "Home", link: "/"},
-                {title: "Docs", link: "/docs"},
+                {title: "Dashboard", link: "/dashboard"},
                 {title: "Blog", link: "/blog"},
                 {title: "Contact", link: "/contact"},
-            ],
-        },
-        // Second col.
-        {
-            headline: "Social Media",
-            content: [
-                {title: "Twitter", link: "https://twitter.com/niclas_timm"},
-                {
-                    title: "GitHub",
-                    link:
-                        "https://github.com/NiclasTimmeDev/laravel-nextjs-starter/",
-                },
-            ],
-        },
-        // Third col.
-        {
-            headline: "Legal",
-            content: [
-                {title: "Privacy", link: "/privacy"},
-                {title: "Imprint", link: "/imprint"},
             ],
         },
     ];

@@ -150,6 +150,15 @@ export function MenuBar({ onClick }): ReactElement {
             <Link href="/">
                 Home
             </Link>
+            <Link href="/dashboard">
+                Dashboard
+            </Link>
+            <Link href="/blog">
+                Blog
+            </Link>
+            <Link href="/contact">
+                Contact
+            </Link>
             <div className="h-full cursor-pointer" onClick={onClick}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
